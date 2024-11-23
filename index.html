@@ -14,13 +14,13 @@
             background: url(img/bg_header.jpg);
             background-size: cover;
             background-position: center;
-            height: 80vh;
+            height: 80vh; /*làm sao phân biệt được khi nào dùng đơn vị gì vh, px,%*/
             padding: 30px;  /* độ phồng 4 phía trên dưới trái phải*/
       }
         .header .banner{
-            text-align: center;
+            text-align: center; /*căn chỉnh văn bản: giữa, justify: căn đều*/
             color:#fff;
-            padding: 100px 20px;
+            padding: 100px 20px; /* 100 độ phồng so với trên dưới, 20 độ phồng trái phải*/
            
         }
         .header .banner h1{
@@ -34,7 +34,7 @@
         .header .navbar{
             width: 80%;
             display:flex;
-            margin: 0 auto;
+            margin: 0 auto;  /*căn lề....*/
             background: #cf372d;
             padding: 16px;
 
@@ -52,13 +52,13 @@
         .header .menu ul{
             display:flex;
             list-style: none;
-            justify-content: space-around;
+            justify-content: space-around; /*Các mục sẽ có khoảng cách trước, giữa và sau chúng*/
 
         }
         .header .menu ul li a{
             color: #fff;
-            margin-right: 10px;
-            text-decoration: none;
+            margin-right: 10px; /*căn lề phải*/
+            text-decoration: none; /* các lk html đều đc gạch chân nên dùng thuộc tính này để xóa gạch chân khỏi các lk*/
         }
         button {
             background: #cf372d;
@@ -66,7 +66,7 @@
             padding: 13px;
         }
         p {
-            opacity: 0.5;
+            opacity: 0.5; /*độ mờ của phần từ 0.0 - 1.0 (1 rõ nhất)*/
         }
         h1 {
             font-family: "Cabin", sans-serif;
@@ -80,6 +80,7 @@
 <body>
     <div class="header">
         <div class="navbar">
+             <!-- thanh điều hướng có liệt kê các danh sách nội dung// -->
             <div class="logo">
                 <img src="img/logo.png"alt="">
             </div>
@@ -96,7 +97,9 @@
             </div>
     <div class="banner">
         <h1> Think Big. <span class="wedo">We do.</span></h1>
+         <!-- nội dung tiêu đề -->
         <p> Capitalise on low hanging fruit to identify a ballpak.</p>
+        <!-- nội dung đoạn văn -->
         <button> OUR PORTFOLIO <i class="fa-solid fa-angle-right"></i></button>
         </div>
     </div>
